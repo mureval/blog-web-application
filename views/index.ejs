@@ -1,0 +1,35 @@
+<%- include('partials/header.ejs') %>
+
+<%- include('partials/nav.ejs') %>
+
+    <% if (locals.title && locals.date && locals.post) { %>
+        <div class="container">    
+            <h1 class="title-post"><%= title %></h1>
+            <hr/>
+            <p class="publish"><em><%= date %></em></p>
+            <div class="container-text">
+                <p class="posted"><%= post %></p>
+            </div>
+            <button class="delete-post" id="del-post">Delete</button>
+        </div>
+    <% } else { %>
+        <div class="container">    
+            <h1 class="title-post"><em>Your Title</em></h1>
+            <hr/>
+            <p class="publish"><em>date</em></p>
+            <div class="container-text">
+                <p class="posted">
+                    <em>
+
+                    
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Habitant nisl cursus nunc fusce nulla tempor. Praesent elit eu aliquet donec id in nisi. Nostra nisi vivamus augue nisi maximus dolor amet. Leo ex est vel ridiculus nostra platea. Mauris proin fames feugiat et non. Dapibus tortor mollis leo sed elementum sem tristique.
+
+                    Gravida ornare quam leo feugiat tempus rutrum et. Lacinia vestibulum luctus cras placerat cursus turpis. Donec sapien nostra dictumst molestie nunc fusce egestas sollicitudin. Pulvinar auctor dignissim etiam metus vivamus per accumsan ultricies ante. Metus dapibus cras lectus purus vestibulum porttitor. Interdum tempor suscipit, nostra massa montes sodales.
+                </p>
+            </em>
+            </div>
+            <button class="delete-post" id="del-post">Delete</button>
+        </div>
+    <% } %>
+
+<%- include('partials/footer.ejs') %>

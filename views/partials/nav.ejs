@@ -1,0 +1,11 @@
+<nav>
+    <h1>GO-BLOG</h1>
+    <button class="post-button">
+        <a href="/post">Create a post</a>
+    </button>
+    <div class="post-list">
+        <% if(locals.title) { %>
+            <button class="post-list-button"><%= title %></button>
+        <% } %>
+    </div>
+</nav>
